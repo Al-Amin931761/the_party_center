@@ -28,6 +28,10 @@
      padding-left: 45px;
      border-radius: 15px;
 }
+/* badge  */
+.hot{
+margin-left: 35%;
+}
 
 /* button  */
 .Choose-plan-button{
@@ -50,3 +54,4 @@ background-color: #3F87F5;
 font-weight: 700;
 color: white;
 }
+

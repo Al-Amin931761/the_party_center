@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convention Center</title>
+    <title>The Party Center</title>
     <!-- Bootstrap css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -68,10 +68,10 @@
                     <div class="carousel-item active">
                         <img src="images/banner-1.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>BE<span style="color: #91C483;">CREATIVE</span></h1>
+                            <h1>BE<span class="text-success">CREATIVE</span></h1>
                             <hr>
                             <hr>
-                            <h3 style="color: #91C483">TENTS AND DECOR FOR INDOR/OUTDOOR PARTIES</h3>
+                            <h3 class="text-success">TENTS AND DECOR FOR INDOR/OUTDOOR PARTIES</h3>
                             <p>The Party Center's selection of tents provides much more than just shade. Our huge
                                 inventory of wall treatments, decorative lighting ceiling liners and accessories
                                 transform ordinary spaces into stunning atmospheres. We can provide everything you need
@@ -83,10 +83,10 @@
                     <div class="carousel-item">
                         <img src="images/banner-2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>BE<span style="color: #191A19;">STYLISH</span></h1>
+                            <h1>BE<span class="text-primary">STYLISH</span></h1>
                             <hr>
                             <hr>
-                            <h3 style="color: #191A19;">CREATIVE DESIGN FOR HIGH-END EVENTS</h3>
+                            <h3 class="text-primary">CREATIVE DESIGN FOR HIGH-END EVENTS</h3>
                             <p>The The Party Center Designer Collection redefines the elegance of party rentals.
                                 Featuring a rich assortment of furniture, specially linens and other fine accessories,
                                 we've assembled an exclusive selection that follows industrytrends and includes the
@@ -98,10 +98,10 @@
                     <div class="carousel-item">
                         <img src="images/banner-3.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h1>BE<span style="color: #3DB2FF;">FESTIVE</span></h1>
+                            <h1>BE<span class="text-info">FESTIVE</span></h1>
                             <hr>
                             <hr>
-                            <h3 style="color: #3DB2FF;">EVENT RENTALS FOR EVERY OCCASION</h3>
+                            <h3 class="text-info">EVENT RENTALS FOR EVERY OCCASION</h3>
                             <p>The Party Center's complete selection event rentals includes everything from glassware,
                                 napkins and furniture to cutlery, fine China and elegant serving pieces. In addition to
                                 our extensive inventory, our knowledgeable sales staff putilizes advanced planning tools
@@ -133,10 +133,31 @@
                     <div class="col-md-6 d-flex align-items-center">
                         <div>
                             <h2>Every moment is Precious</h2>
+
+                            <!-- toast start-->
+                            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <img src="icons/Vector.svg" class="rounded me-2" alt=""><strong class="me-auto">20%
+                                        off
+                                        on next booking</strong>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <!-- script for toast  -->
+                            <script>
+                                window.onload = (e) => {
+                                    let myToast = document.querySelector('.toast');
+                                    let bsToast = new bootstrap.Toast(myToast);
+                                    bsToast.show();
+                                }
+                            </script>
+                            <!-- toast end  -->
+
                             <p>Every moment of life is precious and can never happen again and therefore is a reason to
                                 appreciate, be grateful for and celebrate the fact that you alive.</p>
-                            <button class="explore-our-album">Explore our album <i
-                                    class="fas fa-arrow-right"></i></button>
+                            <a href="https://www.google.com"><button class="explore-our-album">Explore our album <i
+                                        class="fas fa-arrow-right"></i></button></a>
                         </div>
                     </div>
                 </div>
@@ -144,10 +165,9 @@
         </section>
         <!-- 2nd section end  -->
 
-
         <!-- package section  -->
         <section class="container">
-            <h2 class="text-center" style="margin-bottom: 100px; margin-top: 100px;">Our Package</h2>
+            <h2 class="text-center mb-5">Our Package</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
@@ -164,7 +184,6 @@
                                 <i class="far fa-check-circle"> Decoration design</i> <br>
                                 <i class="far fa-check-circle"> Per day bill</i> <br>
                                 <button class="Choose-plan-button">Choose plan</button>
-
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -185,6 +204,8 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <!-- badge -->
+                    <span class="badge rounded-pill bg-danger hot">Hot</span>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="wedding-plus">
@@ -478,19 +499,28 @@
         </section>
     </main>
     <!-- main end  -->
-    <footer class="container" style="background-color: #0B0D17; width: 1440px; height: 280px;">
-        <div class="d-flex justify-content-around">
+
+    <!-- footer start  -->
+    <footer class="pt-3">
+        <div class="d-flex justify-content-around bg-dark align-items-center">
             <div>
-                <p style="color: white;">© 2020 bike. All rights reserved</p>
+                <small class="text-white">© 2020 bike. All rights reserved</small>
             </div>
 
-            <div>
-                <h3 style="color: white;">Get the App</h3>
-                <img src="images/app-store.jpg" alt="">
-                <img src="images/google-play.jpg" alt="">
+            <div class="my-5">
+                <h3 class="text-white">Get the App</h3>
+
+                <a href="https://apps.apple.com/us/app/facebook/id284882215"><img src="images/app-store.jpg" alt=""></a>
+                <br>
+                <br>
+                <a href="https://play.google.com/store/apps/details?id=com.tencent.mm&hl=en&gl=US"><img
+                        src="images/google-play.jpg" alt=""></a>
+
             </div>
         </div>
     </footer>
+    <!-- footer end  -->
+
 
     <!-- Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
