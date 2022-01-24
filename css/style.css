@@ -1,0 +1,42 @@
+/* Book Now Button */
+.book-now{
+     width: 168px;
+     height: 44px;
+     background-color: #406882;
+     border-radius: 15px;
+     text-decoration: none;
+     border: none;
+     font-weight: 700;
+     color: white;
+}
+/* Our Package */
+.package{
+     height: 387px;
+     width: 232px;
+     margin-top: 150px;
+}
+
+/* Wedding plus */
+.wedding-plus{
+    height: 480px;
+     width: 292px;
+      background-color: #406882;
+     color: white;    
+     padding-top: 80px;
+     padding-bottom: 50px;
+     padding-right: 45px;
+     padding-left: 45px;
+     border-radius: 15px;
+}
+
+/* button  */
+.Choose-plan-button{
+background-color: #F496D1;
+border: none;
+border-radius: 15px;
+color: #3F87F5;
+font-weight: 700;
+width: 207px;
+height: 45px;
+margin-top: 15px;
+}
