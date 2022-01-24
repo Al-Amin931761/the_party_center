@@ -40,3 +40,13 @@ width: 207px;
 height: 45px;
 margin-top: 15px;
 }
+
+/* Explore our album button  */
+.explore-our-album{
+border: none;
+width: 230px;
+height: 44px;
+background-color: #3F87F5;
+font-weight: 700;
+color: white;
+}
